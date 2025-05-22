@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+
+
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form action="{{url_for('register')}}" method="post">
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+            <form action="{{url_for('register')}}" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" placeholder="Nome"><br><br>
+        <input type="text" name="nome" placeholder="Nome">
         <label for="senha">Senha:</label>
         <input type="password" name="senha" placeholder="Senha">
         <button type="submit">Enviar</button>
-    </form>
+            </form>
+    </main>
+    
+    
 </body>
-</html>
+</html> 

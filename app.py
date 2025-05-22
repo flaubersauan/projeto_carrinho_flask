@@ -33,6 +33,7 @@ def login():
         return redirect(url_for('dash'))
     return 'Login inválido. <a href="/login">Tente novamente</a>'
 
+
 @app.route('/dashboard')
 def dash():
     if 'user' in session:
